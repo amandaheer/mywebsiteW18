@@ -1,0 +1,26 @@
+header #logo-main {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+
+#navbar-primary.navbar-default {
+    background: transparent;
+    border: none;
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+
+ul il {
+    display: inline-block;
+
+}
+
+a {
+    padding-left: 30px;
+    padding-right: 30px;
+}

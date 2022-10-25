@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript Assignment 4</title>
+
+    <!-- This is the inserted JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- This is the Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+
+<body>
+    <nav>
+        <div id="horizontal-picture">
+        </div>
+        <div id="my-portfolio">
+            <h1>Javascript Assignment 4</h1>
+        </div>
+        <header>
+            <h2 id="section title"></h2>
+        </header>
+    </nav>
+
+    <input id="Button" type="submit" value="Click Here">
+
+    <!-- JQuery -->
+    <script>
+
+        $(document).ready(function () {
+            $("#hideShow").click(function () {
+                $("#education").toggle();
+            });
+        });
+
+        $("#Button").click(function () {
+
+            alert("test");
+        });
+    </script>
+
+    <script>
+        function ItWorks() {
+            let x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }
+            else if (x == " ") {
+                alert("Empty spaces don't count ;)");
+                return false;
+            }
+            else {
+                alert("Hello " + x);
+            }
+        }
+    </script>
+
+
+
+    <form name="myForm" onsubmit="return ItWorks()" method="post">
+        Name: <input type="text" name="fname">
+
+
+        Email: <input required type="email" name="emailhere">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <h3>My Work Experience</h3>
+
+    <!-- Button -->
+    <input id="hideShow" type="submit" value="See Where I've Worked!">
+    <br>
+
+    <!-- table -->
+    <h3>My Education</h3>
+    <table id="education" style="border: 1x solid black; border-collapse: collapse; padding:5px;">
+        <tr>
+            <th style="border: 1x solid black; border-collapse: collapse; padding: 5px;">School</th>
+            <th style="border: 1x solid black; border-collapse: collapse; padding: 5px;">Graduated</th>
+        </tr>
+
+        <tr>
+            <td style="border: 1x solid black; border-collapse: collapse; padding: 5px;">CV HS</td>
+            <td style="border: 1x solid black; border-collapse: collapse; padding: 5px;">2008</td>
+        </tr>
+        <tr>
+            <td style="border: 1x solid black; border-collapse: collapse; padding: 5px;">UVU</td>
+            <td style="border: 1x solid black; border-collapse: collapse; padding: 5px;">2014</td>
+        </tr>
+
+        <tr>
+            <td style="border: 1x solid black; border-collapse: collapse; padding: 5px;">SLCC
+            </td>
+            <td style="border: 1x solid black; border-collapse: collapse; padding: 5px;">Present</td>
+        </tr>
+
+    </table>
+
+
+
+
+</body>
+
+</html>
